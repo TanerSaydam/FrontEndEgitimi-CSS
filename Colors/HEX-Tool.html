@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colorDiv{            
+            background-color: #ff0000;             
+            padding-top: 2%; 
+            padding-bottom: 2%; 
+            color: white; 
+            font-size: 30px;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+
+        div{
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function changeColor(){
+            let redInput = document.getElementById("redInput");
+            let redP = document.getElementById("redP");
+            redP.innerText = redInput.value.toHexString();           
+        }        
+    </script>
+
+</head>
+<body>
+    <h1>Hex Tool</h1>
+    <div id="colorDiv">
+        #ff0000
+    </div>
+    <hr>
+    <div>
+        <div>
+            <p>Red</p>
+            <input 
+                id="redInput" 
+                onchange="changeColor()"
+                oninput="changeColor()"
+                type="range" 
+                min="0" 
+                max="255"
+                value="200"
+                pattern="[a-fA-F\d]+"
+                >
+            <p id="redP">0</p>
+        </div>
+        <div>
+            <p>Green</p>
+            <input type="range" min="0" max="255">
+            <p>0</p>
+        </div>
+        <div>
+            <p>Blue</p>
+            <input type="range" min="0" max="255">
+            <p>0</p>
+        </div>
+    </div>
+</body>
+</html>
