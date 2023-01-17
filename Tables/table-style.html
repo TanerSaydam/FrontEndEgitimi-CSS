@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+    <style>
+        table,th,td{
+            border: 1px solid #ddd;
+            /* text-align: left; */
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,td{
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover{
+            background-color: coral;
+        }
+
+        .active{
+            background-color: #ddd
+        }
+
+        tr:nth-child(odd) {background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+    <h1>Table Style</h1>
+    <table>
+        <thead>
+            <tr class="active">
+                <th>First Name
+                    <input type="search" style="width: 100%;" placeholder="aranacak değer...">
+                </th>
+                <th>Last name
+                    <input type="search" style="width: 100%;"
+                    placeholder="aranacak değer...">
+                </th>
+                <th style="margin: 0; padding: 0;">Saving
+                    <br>
+                    
+                    <button style="border: none;">
+                    <i class="fa fa-search"></i>      
+                    <input type="search" style="width: 89%"                    
+                    placeholder="aranacak değer...">
+                </button>              
+                    
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>                
+                <td>Taner</td>
+                <td>Saydam</td>
+                <td>$100</td>
+            </tr>
+            <tr>                
+                <td>Tugay</td>
+                <td>Saydam</td>
+                <td>$100</td>
+            </tr>
+            <tr>                
+                <td>Seval</td>
+                <td>Saydam</td>
+                <td>$300</td>
+            </tr>
+            <tr>                
+                <td>Seval</td>
+                <td>Saydam</td>
+                <td>$300</td>
+            </tr>
+            <tr>                
+                <td>Seval</td>
+                <td>Saydam</td>
+                <td>$300</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
