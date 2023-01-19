@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;            
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border: 1px solid;
+        }       
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elements</h1>
+    <pre style="border: 1px solid; width: 250px;">
+        selector::pseudo-element{
+            property:value
+        }
+    </pre>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Pseudo Element Adı</th>
+                <th>Örnek Kullanım</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <style>
+                    p::after{
+                        content: " konuşuyor..."
+                    }
+                </style>
+                <td>::after</td>
+                <td>
+                    <p>Taner Saydam</p>
+                    <p>Tugay Saydam</p>
+                    <p>Seval Saydam</p>                    
+                </td>
+            </tr>
+            <tr>
+                <style>
+                    p::before{
+                        content: "Sayın "
+                    }
+                </style>
+                <td>::before</td>
+                <td>
+                    <p>Taner Saydam</p>
+                    <p>Tugay Saydam</p>
+                    <p>Seval Saydam</p>                    
+                </td>
+            </tr>
+            <tr>
+                <style>
+                    p::first-letter{
+                        background-color: yellow;
+                    }
+                </style>
+                <td>::first-letter</td>
+                <td>
+                    <p>Taner Saydam</p>
+                    <p>Tugay Saydam</p>
+                    <p>Seval Saydam</p>                    
+                </td>
+            </tr>
+            <tr>
+                <style>
+                    p::first-line{
+                        background-color: yellow;
+                    }
+                </style>
+                <td>::first-line</td>
+                <td>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sit vitae natus ipsa quibusdam quos minus cum dolore eum, doloribus delectus eaque molestias architecto reiciendis, libero, deserunt a eius perspiciatis.</p>                    
+                </td>
+            </tr>
+            <tr>
+                <style>
+                    ::marker{
+                        color: red;    
+                    }
+                </style>
+                <td>::marker</td>
+                <td>
+                    <ul>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                    </ul>   
+
+                    <ol>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                    </ol> 
+                </td>
+            </tr>
+            <tr>
+                <style>
+                    ::selection{
+                        color: red; 
+                        background-color: cornflowerblue;   
+                    }
+                </style>
+                <td>::selection</td>
+                <td>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sed minus ducimus ut facere, ipsum repellat qui error ipsam, vel laudantium laboriosam, voluptates voluptatibus provident tenetur nesciunt deserunt? Rem, ipsam?</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
