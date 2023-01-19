@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+        }
+
+        .black-box{
+            position: relative;  
+            z-index: 1;          
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+
+        .gray-box{
+            position: absolute;
+            z-index: 3;
+            background-color: lightgray;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+
+        .green-box{
+            position: absolute;
+            z-index: 2;
+            background-color: lightgreen;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-index element</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, animi!</p>
+
+    <div class="container">
+        <div class="black-box">Black box (z-index:1)</div>
+        <div class="gray-box">Gray box (z-index:3)</div>
+        <div class="green-box">Green box (z-index:2)</div>
+    </div>
+
+    <style>
+        img{
+            position: absolute;
+            z-index:1;
+            width: 400px;
+            opacity: 0.3;
+        }
+
+        p{
+            z-index: 5;
+        }
+    </style>
+
+    <div class="container">
+        <img src="https://i.ytimg.com/vi/8QYmlVVMowY/maxresdefault.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorum.</p>
+    </div>
+</body>
+</html>

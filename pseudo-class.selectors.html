@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width: 100%;            
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border: 1px solid;
+        }       
+    </style>
+</head>
+<body>
+    <h1>Pseudo-class Selectors</h1>
+    <div>
+        <h4>Syntax Yapısı</h4>
+        <pre style="border: 1px solid; width: 300px;">
+                selector<strong>:pseudo-class</strong> {
+                    property: value
+                }
+        </pre>  
+        
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pseudo-class Adı</th>
+                    <th>Örnek Kullanımı</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>:active</td>
+                    <td>
+                        <style>
+                            a:active, 
+                            p:active,
+                            span:active{
+                                background-color: black;
+                                color: white;
+                            }                          
+                        </style>
+                        <a href="#">a elementi</a>
+                        <br>
+                        <p>p elementi</p>
+                        <span>span elementi</span>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:checked, option:checked{
+                            height: 50px;
+                            width: 50px;
+                            background-color: black;
+                            color: white;
+                        }
+                    </style>
+                    <td>:checked</td>
+                    <td>
+                        checkbox elementi
+                        <input type="checkbox">
+                        <br>
+                        radio elementi
+                        <input type="radio">
+                        <br>
+                        <select>
+                            <option>Seçenek 1</option>
+                            <option>Seçenek 2</option>
+                            <option>Seçenek 3</option>
+                            <option>Seçenek 4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        /* input:disabled, button:disabled{
+                            background: yellow;
+                        } */
+                        *:disabled{
+                            background: yellow;
+                        }                        
+                    </style>
+                    <td>:disabled</td>
+                    <td>
+                        <input disabled>
+                        <br>                        
+                        <button disabled>Button</button>
+                        <br>                        
+                        <textarea disabled></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        p:empty{
+                            height: 20px;
+                            background: red;
+                        }
+
+                        /* *:empty{
+                            height: 20px;
+                            background: red;
+                        } */
+                    </style>
+                    <td>:empty</td>
+                    <td>
+                        <p></p>
+                        <p>Lorem, ipsum.</p>
+                    </td>
+                </tr>                
+                <tr>
+                    <style>
+                        .enabled:enabled{
+                            background: greenyellow;
+                        }
+                    </style>
+                    <td>:enabled</td>
+                    <td><input class="enabled"></td>
+                </tr>
+                <tr>
+                    <style>
+                        .first-child:first-child{
+                            background-color: yellow;
+                        }
+                    </style>
+                    <td>:first-child</td>
+                    <td>
+                        <p class="first-child">Lorem ipsum dolor sit amet.</p>
+                        <p class="first-child">Lorem ipsum dolor sit amet.</p>
+                        <div>
+                            <p class="first-child">Lorem, ipsum dolor.</p>
+                            <p class="first-child">Lorem, ipsum dolor.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .first-of-type:first-of-type{
+                            background-color: red;
+                        }
+                    </style>
+                    <td>first-of-type</td>
+                    <td>
+                        <p class="first-of-type">Lorem, ipsum dolor.</p>
+                        <p class="first-of-type">Lorem, ipsum dolor.</p>
+                        <p class="first-of-type">Lorem, ipsum dolor.</p>
+                        <p class="first-of-type">Lorem, ipsum dolor.</p>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .focus:focus{
+                            background-color: orange;
+                        }
+                    </style>
+                    <td>:focus</td>
+                    <td>
+                        <input class="focus">
+                        <input class="focus">
+                        <input class="focus">
+                        <input class="focus">
+                        <br>
+                        <textarea class="focus">
+                        </textarea>                        
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .hover:hover{
+                            font-size: 20px;
+                            background-color: aqua;
+                        }
+                    </style>
+                    <td>:hover</td>
+                    <td>
+                        <p class="hover">Lorem ipsum dolor sit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:in-range{
+                            background-color: aquamarine;
+                        }
+                    </style>
+                    <td>:in-range</td>
+                    <td>
+                        <input type="number" min="1" max="5" value="3">
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:invalid{
+                            border: 2px solid red;
+                        }
+                    </style>
+                    <td>:invalid</td>
+                    <td>
+                        <input 
+                            type="email" 
+                            required 
+                            email>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        p:lang(tr){
+                            background-color: hotpink;
+                        }
+                    </style>
+                    <td>:lang(value)</td>
+                    <td>
+                        <p lang="tr">Lorem ipsum dolor sit.</p>
+                        <p lang="en">asdasd</p>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .last-child:last-child{
+                            background-color: darkslateblue;
+                        }
+                    </style>
+                    <td>last-child</td>
+                    <td>
+                        <p class="last-child">Lorem ipsum dolor sit.</p>
+                        <p class="last-child">Lorem ipsum dolor sit.</p>
+                        <p class="last-child">Lorem ipsum dolor sit.</p>
+                        <p class="last-child">Lorem ipsum dolor sit.</p>
+                        <p class="last-child">Lorem ipsum dolor sit.</p>
+                        <h5>asdasd</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .link:link{
+                            background-color: aqua;
+                        }
+                    </style>
+                    <td>:link</td>
+                    <td>
+                        <a href="#" class="link">a elementi</a>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        /* p{
+                            color: black;
+                        }
+                        :not(p){
+                            color: red;
+                        } */
+                    </style>
+                    <td>:not(selector)</td>
+                    <td>
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .nth-child:nth-child(3){
+                            background-color: darkgray;
+                        }
+                    </style>
+                    <td>:nth-child(value)</td>
+                    <td>
+                        <p class="nth-child">Lorem, ipsum.</p>
+                        <p class="nth-child">Lorem, ipsum.</p>
+                        <p class="nth-child">Lorem, ipsum.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .nth-last-child:nth-last-child(2){
+                            background-color: indianred;
+                        }
+                    </style>
+                    <td>:nth-last-child(value)</td>
+                    <td>
+                        <p class="nth-last-child">Lorem, ipsum.</p>
+                        <p class="nth-last-child">Lorem, ipsum.</p>
+                        <p class="nth-last-child">Lorem, ipsum.</p>
+                        <p class="nth-last-child">Lorem, ipsum.</p>                        
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        h5:nth-last-of-type(2){
+                            background-color: grey;
+                        }
+                    </style>
+                    <td>:nth-last-of-type()</td>
+                    <td>
+                        <h5>Lorem, ipsum.</h5>
+                        <h5>Lorem, ipsum.</h5>
+                        <h5>Lorem, ipsum.</h5>
+                        <h5>Lorem, ipsum.</h5>
+                        <p>Lorem, ipsum.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        h4:nth-of-type(3){
+                            background-color: aqua;
+                        }
+                    </style>
+                    <td>:nth-of-type</td>
+                    <td>
+                        <h4>Lorem, ipsum.</h4>
+                        <h4>Lorem, ipsum.</h4>
+                        <h4>Lorem, ipsum.</h4>
+                        <h4>Lorem, ipsum.</h4>
+                        <h4>Lorem, ipsum.</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        code:only-of-type{
+                            background-color: beige;
+                        }
+                    </style>
+                    <td>:only-of-type</td>
+                    <td>
+                        <div>
+                            <code>Lorem.</code>
+                        </div>
+
+                        <div>
+                            <code>Lorem.</code>
+                            <code>Lorem.</code>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:optional{
+                            background-color: azure;
+                        }
+                    </style>
+                    <td>:optional</td>
+                    <td>
+                        <input>
+                        <input required>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:out-of-range{
+                            background-color: cadetblue;
+                        }
+                    </style>
+                    <td>:out-of-range</td>
+                    <td>
+                        <input 
+                            type="number"
+                            min="1"
+                            max="5"
+                            value="6">
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:read-only{
+                            background-color: fuchsia;
+                        }
+                    </style>
+                    <td>:read-only</td>
+                    <td>
+                        <input readonly> 
+                        <input>                       
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:read-write{
+                            background-color: lightskyblue;
+                        }
+                    </style>
+                    <td>:read-write</td>
+                    <td>
+                        <input readonly> 
+                        <input>                       
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        .required:required{
+                            background-color: yellow;
+                        }
+                    </style>
+                    <td>:required</td>
+                    <td>
+                        <input required class="required">
+                        <input class="required">
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        :root{
+                            background-color: antiquewhite;
+                        }
+                    </style>
+                    <td>:root</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <style>
+                        :target{
+                            background-color: cyan;
+                        }
+                    </style>
+                    <td>:target</td>
+                    <td>
+                        <a href="#pElement">Lorem.</a>
+                        <a href="#pElement2">Lorem.</a>
+                        <a href="#pElement3">Lorem.</a>
+                        <p id="pElement">Lorem ipsum dolor sit amet.</p>
+                        <p id="pElement2">Lorem ipsum dolor sit amet.</p>
+                        <p id="pElement3">Lorem ipsum dolor sit amet.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        input:valid{
+                            border: 2px solid green;
+                            border-radius: 10px;
+                        }
+                    </style>
+                    <td>:valid</td>
+                    <td>
+                        <input type="number" min="3" value="2">
+                    </td>
+                </tr>
+                <tr>
+                    <style>
+                        a:visited{
+                            color: red;
+                        }
+                    </style>
+                    <td>:visited</td>
+                    <td>
+                        <a href="https://www.google.com" target="_blank">Google'a git</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="padding-bottom: 2000px;"></div>
+</body>
+</html>

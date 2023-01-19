@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Combinators</h1>
+    <ol>
+        <li>Desendant Selector (space - boşluk)
+            <p>Örnek: <code>div p</code></p>
+        </li>
+        <li>Child Selector (>)
+            <p>Örnek: <code>div > p</code></p>
+        </li>
+        <li>Adjecent Sibling Selector (+)
+            <p>Örnek: <code>div + p</code></p>
+        </li>
+        <li>General Sibling Selector (~)
+            <p>Örnek: <code>div ~ p</code></p>
+        </li>
+
+    </ol>
+
+<style>
+    /* Desendant Selector */
+    /* div p{
+        background-color: yellow;
+    } */
+    /* Desendant Selector */
+
+    /* Child Selector */
+    /* div > p{
+        background-color: yellow;
+    } */
+    /* Child Selector */
+
+    /* Adjacent Sibling Selector */
+    /* div + p{
+        background-color: yellow;
+    } */
+    /* Adjacent Sibling Selector */ 
+    
+    /* General Sibling Selector */
+    div ~ p{
+        background-color: yellowgreen;
+    }
+    /* General Sibling Selector */
+</style>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quisquam?</p>
+
+    <div>
+        <p>Div elementinin içinde 1. P</p>
+        <p>Div elementinin içinde 2. P</p>
+        <section>
+            <p>Div elementinin içindeki select elementinin içindeki 1. P</p>
+        </section>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p>asdasd</p>
+</body>
+</html>

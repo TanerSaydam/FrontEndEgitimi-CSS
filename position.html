@@ -15,31 +15,106 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <style>
-            div.static{
+            /* static, positin için default */
+            /* div.static{
+                border: 3px solid green;
+                left: 30px;
+                position: static;
+                
+            } */
+
+            /* div.relative{
+                border: 3px solid green;
+                left: 30px;
+                top: 100px;                               
+                position: relative;
+            } */
+            
+            /* div.fixed{
+                border: 3px solid red;
+                bottom: 0;
+                right: 0;
+                width: 300px;
                 position: fixed;
-                border: 3px solid #73AD21;
-                z-index: -1;
+            } */
+
+            div.relative{
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid green;
             }
-        </style>
+
+            div.absolute{
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                border: 3px solid red;
+            }
+
+            div.sticky{
+                border: 2px solid red;
+                background-color: greenyellow;
+                top: 0;
+                padding: 5px;
+                position: sticky;
+            }
+            
+            </style>
     </head>
     <body>
         <!-- Sana döneceğiz -->
-        <h1>Position</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, provident doloremque. Ipsum error facilis consequuntur incidunt sit dicta facere quae, voluptas enim labore nesciunt? Ullam enim perspiciatis sint suscipit et.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est magnam minus laborum hic ut deserunt delectus, vitae ipsa eveniet ad quis eum aspernatur possimus sequi maxime commodi optio ratione eius!
-            Temporibus numquam magni rerum a earum iste non sit aperiam adipisci unde saepe perferendis quo labore ad, reiciendis atque molestiae doloribus suscipit, sapiente aliquid odio repellat quasi libero? Iste, eius.
-            Recusandae veritatis ad quos fugiat facere rem non totam iusto ab iste a ex aspernatur neque exercitationem assumenda, quisquam nam dignissimos doloribus. Eum ipsam eius aut amet accusantium et corrupti!
-            Vitae nihil doloremque sequi corrupti illum quisquam aspernatur et adipisci quos soluta ad quas eius illo quidem magni perspiciatis tempora repellat sapiente similique, vel harum, culpa tenetur laudantium ipsam! Atque!
-            At unde ex fugit, placeat delectus reprehenderit inventore ab fugiat hic. Quos ipsam ipsum atque rerum culpa repellendus esse, praesentium ipsa laudantium optio unde ullam natus corrupti incidunt mollitia animi!
-            Delectus quis vel dolore neque aspernatur nobis voluptate animi recusandae amet temporibus? Nulla asperiores sint culpa qui, fugiat impedit harum quos. Ullam, reiciendis officiis necessitatibus et molestiae expedita accusantium dolores.
-            Quaerat id rem illum voluptatem mollitia dicta, culpa nesciunt tempora reiciendis sit rerum deserunt quae eaque qui ratione ut sint dolor impedit error, dolore odio. Laborum illo perferendis cum quas?
-            Optio dolore porro id, illum tempora eligendi facere eos fugit velit laudantium harum repudiandae numquam cupiditate qui hic nesciunt assumenda perferendis, soluta eum quae molestiae consequuntur autem culpa? Blanditiis, tenetur!
-            Dicta doloremque provident modi esse quia eaque aspernatur quaerat reprehenderit cumque amet laudantium officia dolores soluta, aperiam voluptatibus eius dolore neque harum repudiandae eveniet? Esse, nulla. Atque tenetur ex eveniet?
-            Facere nobis dolorem sapiente optio a dolor vero modi eligendi distinctio, nemo harum iste nulla dolores in praesentium blanditiis est, qui, possimus fuga dolorum temporibus. Facilis atque corrupti eaque tenetur.
+        <!-- <h1>Position</h1>
+        <h4>static</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, provident doloremque. 
         </p>
 
         <div class="static">
             Lorem ipsum dolor sit amet.
+        </div>
+        <hr>
+        <h4>relative</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, praesentium!</p>
+
+        <div class="relative">
+            Lorem ipsum dolor sit amet.
+        </div> -->
+        <!-- <hr>
+        <h4>fixed</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, sit.</p>
+
+        <div class="fixed">
+            Lorem ipsum dolor sit.
+        </div> -->
+        <!-- <h4>absolute</h4>        
+
+        <div class="relative">  
+            Lorem ipsum dolor sit amet.          
+            <div class="absolute">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, eius?
+            </div>
+        </div> -->
+
+
+        <hr>
+        <h3>sticy</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti! Repudiandae ab laudantium ipsum dolorem?</p>
+
+        <div class="sticky">I am sticky!</div>
+
+        <div style="padding-bottom: 2000px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia, a neque nobis saepe sint et inventore cupiditate, ex quidem aliquid in, dolore soluta aspernatur natus ullam voluptatem. Atque, culpa!
+            Nesciunt sequi expedita nulla dicta. Libero possimus vero ut natus. Architecto at eaque debitis dolorem libero inventore consectetur adipisci perferendis amet sunt, quia doloribus impedit quae alias illum tempora veritatis.
+            Molestiae corrupti eveniet assumenda voluptatibus ad dolore, a ullam esse quos sapiente maiores perspiciatis ipsum, reprehenderit aperiam sequi similique maxime quam iste dolorum odio, excepturi quisquam iure placeat! Repellat, eius?
+            Recusandae ratione at dolor dignissimos quod facilis eum totam deserunt nemo. Earum quia temporibus quos minus vel, hic, impedit excepturi accusamus pariatur aliquam consequatur, culpa velit repellat ducimus enim. Illum.
+            Voluptatum nihil nostrum, facilis quis dignissimos, minima deleniti quaerat neque autem consectetur id nesciunt, nobis ducimus odit culpa quia perspiciatis laborum. Similique quos cupiditate cum ratione, delectus dignissimos porro mollitia?
+            Sed, temporibus aliquid quibusdam aliquam esse explicabo ullam autem sequi eaque non recusandae! Veritatis neque praesentium consequatur. Aliquid quos, nihil quam, voluptatum perferendis nobis corrupti placeat quasi doloribus illo consectetur!
+            Sunt alias impedit nulla exercitationem facere numquam, fugiat quidem excepturi eaque quam dolor velit. Inventore eligendi, commodi ipsum corrupti suscipit quasi. Sit velit maiores totam explicabo, blanditiis perferendis tempore commodi.
+            Doloremque ipsum dolores expedita ab quibusdam blanditiis, consequatur tempora placeat, quos nulla beatae veniam itaque recusandae deserunt porro temporibus odit iure qui ipsa magnam velit quasi saepe quidem. Optio, repudiandae?
+            Harum necessitatibus maiores in nam repellendus debitis atque. Autem nemo mollitia quod reprehenderit perspiciatis. Amet animi, praesentium voluptatem beatae officiis nesciunt qui dolorem voluptates hic reprehenderit magni quo illo optio?
+            Ab non sed alias accusamus fugit explicabo officia expedita corrupti quaerat deserunt quisquam laborum, harum in? Suscipit doloribus nobis et neque, impedit animi sed. Natus neque unde cupiditate ducimus laudantium?</p>
         </div>
     </body>
     </html>
