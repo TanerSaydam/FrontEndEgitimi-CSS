@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taner Saydam | İletişim</title>
     <script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../my-css/my-css.css">
     <style>
         a{
             text-decoration: none;
@@ -32,46 +33,94 @@
 
 <body>
     <nav>
-        <a href="index.html">
-            <i class="fa fa-home"></i>            
-            Ana Sayfa</a> |
-        <a href="hakkimda.html">
-            <i class="fa fa-stop"></i>
-            Hakkımızda</a> |
-        <a href="iletisim.html" class="active">
-            <i class="fa-solid fa-envelope"></i>
-            İletişim
-        </a>
+        <ul class="navbar">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li class="dropdown">
+                <a 
+                href="#" class="btn-dropdown">
+                    Dropdown
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                </div>
+            </li>
+        </ul>
     </nav>
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">
+                        First Name
+                    </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="fname" id="fname">
+                </div>
+            </div>
 
-    <hr>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">
+                        Last Name
+                    </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="lname" id="lname">
+                </div>
+            </div>
 
-    <fieldset>
-        <legend>İletişim Formu</legend>
-        <div>
-        <Label for="name">Ad Soyad</Label>
-        <input id="name" type="text" placeholder="Adınız soyadınız">
-    </div>
-    <div>
-        <label for="email">Mail Adresiniz</label>
-        <input id="email" type="email" placeholder="Mail adresiniz">
-    </div>
-    <div>
-        <label for="title">Konu</label>
-        <input type="text" id="title" placeholder="İletişim konusu">
-    </div>
-    <div>
-        <label for="content">İçerik</label>
-        <textarea rows="10" placeholder="İletişim içeriğini yazın"></textarea>
-    </div>
-    <div>
-        <button>Temizle</button>
-        <button>Gönder</button>
-    </div>
-    </fieldset>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">
+                        Country
+                    </label>
+                </div>
+                <div class="col-75">
+                    <select name="country" id="country">
+                        <option value="turkey">
+                            Türkiye
+                        </option>
+                        <option value="abd">
+                            ABD
+                        </option>
+                        <option value="canada">
+                            Canada
+                        </option>
+                    </select>
+                </div>
+            </div>
 
-    <hr>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Subject">
+                        Subject
+                    </label>                    
+                </div>
+                <div class="col-75">
+                    <textarea 
+                        name="" 
+                        id="" 
+                        cols="30" rows="10">
+                    </textarea>
+                </div>
+            </div>
 
+            <div class="row">
+                <button class="btn-submit" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>    
     <footer>
         2023-
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

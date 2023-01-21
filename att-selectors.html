@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            display: block;
+        }
+        a[target="_blank"]{
+            color: red;
+        }
+
+        /* p[href~="www"]{
+            background-color: black;
+            color: white;
+        } */
+
+        p[href="www"]{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors</h1>
+    <!-- <a target="_parent">Lorem ipsum dolor sit.</a>
+    <a target="_blank">Lorem ipsum dolor sit.</a>
+    <a>Lorem ipsum dolor sit.</a>
+    <a>Lorem ipsum dolor sit.</a> -->
+
+    <p href="#">Lorem ipsum dolor sit.</p>
+    <p href="www-taner">Lorem ipsum dolor sit.</p>
+    <p href="www">Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;            
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            resize: vertical;            
+        }
+
+        input,label,.btn-submit{
+            font-size: 14px;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        .col-25,
+        .col-75 {
+            float: left;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            width: 75%;
+        }
+
+        .btn-submit{
+            margin-top: 3px;
+            background-color: #04aa6d;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            float: right;            
+        }
+
+        @media screen and (max-width: 600px){
+            .col-25, .col-75, .btn-submit{
+                width: 100%;
+                margin-top: 0;
+            }
+
+            .btn-submit{
+                margin-top: 15px;
+            }
+        }
+    </style>
+    <style>
+        /* dry - don't repeat yourself */
+        /* input[type="text"]{
+            width: 100%;  
+            padding: 12px 20px;          
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid rgb(5, 80, 108);            
+        }
+
+        input[type="text"]:focus{
+            border: 2px solid green;
+            border-radius: 5px;
+        }
+
+        button[type="submit"]{
+            background-color: #0dAA6d;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover{
+            background-color: #45a049;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <!-- <form>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname">
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname">
+
+        <label for="profession">Profession</label>
+        <input type="text" name="profession" id="profession">
+
+        <button type="submit" style="float: right;">Submit</button>
+    </form> -->
+
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">
+                        First Name
+                    </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="fname" id="fname">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">
+                        Last Name
+                    </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="lname" id="lname">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">
+                        Country
+                    </label>
+                </div>
+                <div class="col-75">
+                    <select name="country" id="country">
+                        <option value="turkey">
+                            Türkiye
+                        </option>
+                        <option value="abd">
+                            ABD
+                        </option>
+                        <option value="canada">
+                            Canada
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Subject">
+                        Subject
+                    </label>                    
+                </div>
+                <div class="col-75">
+                    <textarea 
+                        name="" 
+                        id="" 
+                        cols="30" rows="10">
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <button class="btn-submit" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

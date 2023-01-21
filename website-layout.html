@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .header{
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav{
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .nav ul li a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }  
+
+        .nav ul li .dropdown{
+            display: inline-block;
+        }
+
+        .nav ul li .dropdown .dropbtn{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;            
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #fe0909;
+            min-width: 200px;
+            min-height: 500px;
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .right{
+            float: right !important;
+        }
+
+        .row:after{
+            content:"";
+            display: table;;
+            clear: both;
+        }
+
+        .nav li{
+            list-style-type: none;
+        }
+
+        [class^="col"]{
+            float: left;
+            padding: 15px;
+        }
+
+        .col-25{
+            width: 25%;
+            
+        }
+
+        .col-50{
+            width: 50%;            
+        }
+
+        .short-navbar{
+            display: none;
+        }                
+
+        .footer{
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:600px){
+            .sidebar{
+                display: none;
+            }
+
+            .short-navbar{
+                display: block;
+            }
+
+            .long-navbar{
+                display: none;
+            }
+
+            .short-nav-sidebar{
+                display: inline-block;
+                position: relative;
+            }
+
+            .short-nav-sidebar-content{
+                position: absolute;
+                display: block;
+                width: 25%;
+                padding: 10px;
+                height: 100%;
+                background-color: red;
+                z-index: 1;
+                color: white;
+            }
+
+
+            .content{
+                width: 100%;                
+            }
+        }
+    </style>
+
+<script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- My Website Layout -->
+
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+
+    <nav class="nav long-navbar">
+        <ul>
+            <li>
+                <a href="#">Link 1</a>
+            </li>
+            <li>
+                <a href="#">Link 2</a>
+            </li> 
+            <!-- <li class="dropdown">
+                <a href="#">
+                    <i class="fa-solid fa-list"></i>
+                </a>                     
+                 <div class="dropdown-content">
+                     <a href="#">Dropdown link1</a>
+                     <a href="#">Dropdown link2</a>
+                     <a href="#">Dropdown link3</a>
+                 </div>
+             </li>             -->
+            <li class="right">
+                <a href="#">Link 4</a>
+            </li>
+        </ul> 
+    </nav>
+
+    <nav class="nav short-navbar">
+        <div class="short-nav-sidebar">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">
+                        <i class="fa-solid fa-list"></i>
+                    </a>                     
+                     <div class="dropdown-content">
+                         <a href="#">Dropdown link1</a>
+                         <a href="#">Dropdown link2</a>
+                         <a href="#">Dropdown link3</a>
+                     </div>
+                 </li>                
+            </ul>                       
+        </div> 
+    </nav>   
+
+    <div class="row">
+        <div class="col-25 sidebar">
+            <h1>Sidebar</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam architecto, suscipit molestiae iure dolore officiis rem aperiam laudantium, distinctio ratione iusto cupiditate! Ad perferendis odio, porro dicta nulla sequi totam.
+        </div>
+        <div class="col-50 content">
+            <h1>Content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum porro veniam rem, ut sint maiores aspernatur iusto incidunt nihil velit minus nam voluptatem, ullam voluptas laborum excepturi impedit facere?</p>
+        </div>
+        <div class="col-25 sidebar">
+            <h1>Right Sidebar</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sit eos suscipit cumque, incidunt quod eaque consequuntur non eum maiores enim facere natus nihil perspiciatis! Blanditiis corporis impedit pariatur natus?
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

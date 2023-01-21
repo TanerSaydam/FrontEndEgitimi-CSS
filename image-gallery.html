@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.gallery {            
+            border: 1px solid #ccc;            
+        }
+
+        div.gallery:hover {
+            border-color: black;
+            cursor: pointer;
+        }
+
+        div.gallery img {
+            width: 100%;
+        }
+
+        div.desc {
+            padding: 10px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive{
+            padding: 0 6px;
+            float: left;
+            width: 22.8999%;
+            margin: 5px;
+        }
+
+        @media only screen and (max-width:700px){
+            .responsive{
+                width: 45%;
+                margin: 6x 0;
+            }
+        }
+
+        @media only screen and (max-width:500px){
+            .responsive{
+                width: 100%;
+                margin: 6x 0;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+        <div class="gallery">
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/FulyL4oFj40/maxresdefault.jpg" alt="">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/Rj-Jn2JNcQw/maxresdefault.jpg" alt="">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/DrBOZrMatZA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB237ebSqqpzXmu-ugVPaqZy3RY4Q"
+                    alt="">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a href="#">
+                <img src="https://i.ytimg.com/vi/re2K4sE1pQs/maxresdefault.jpg" alt="">
+            </a>
+            <div class="desc">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+</body>
+
+</html>
