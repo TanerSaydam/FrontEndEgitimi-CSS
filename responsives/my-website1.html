@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./my-website1.css">  
-    
+    <link rel="stylesheet" href="./my-website1.css">
+
     <script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Header start -->
     <header class="header">
@@ -17,20 +24,40 @@
     </header>
     <!-- Header end -->
 
+    <script>
+        function showOrHideMyNavbar(){
+            let element = document.getElementById("navbar-content");
+            className=element.className;
+            if(className != ""){
+                element.className = "";
+            }else{
+                element.className = "navbar-content";
+            }            
+        }
+    </script>
+
     <!-- Navbar start -->
     <nav class="navbar">
-        <ul>            <li>
-                <a href="#">Link1</a>               
+        <ul>
+            <li class="short-navbar">
+                <a href="#" onclick="showOrHideMyNavbar()">
+                    <i class="fa-solid fa-list"></i>
+                </a>
             </li>
-            <li>
-                <a href="#">Link2</a>                
-            </li>
-            <li>
-                <a href="#">Link3</a>                
-            </li>
-            <li class="right">
-                <a href="#">Link4</a>
-            </li>            
+            <div class="navbar-content" id="navbar-content">
+                <li>
+                    <a href="#">Link1</a>
+                </li>
+                <li>
+                    <a href="#">Link2</a>
+                </li>
+                <li>
+                    <a href="#">Link3</a>
+                </li>
+                <li class="right">
+                    <a href="#">Link4</a>
+                </li>
+            </div>
         </ul>
     </nav>
     <!-- Navbar end -->
@@ -41,36 +68,35 @@
             <div class="card">
                 <h2>TITLE HEADING</h2>
                 <h5>Title description, 20.01.2023</h5>
-                <div 
-                    class="fakeimg" 
-                    style="height: 200px;">
+                <div class="fakeimg" style="height: 200px;">
                     Image
                 </div>
                 <p>Some text...</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quia odit nisi accusantium quisquam maxime. Perspiciatis beatae odit, ut aliquam explicabo obcaecati cum ipsum. Facere at illo soluta nemo consequatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quia odit nisi accusantium
+                    quisquam maxime. Perspiciatis beatae odit, ut aliquam explicabo obcaecati cum ipsum. Facere at illo
+                    soluta nemo consequatur.</p>
             </div>
 
             <div class="card">
                 <h2>TITLE HEADING</h2>
                 <h5>Title description, 20.01.2023</h5>
-                <div 
-                    class="fakeimg" 
-                    style="height: 200px;">
+                <div class="fakeimg" style="height: 200px;">
                     Image
                 </div>
                 <p>Some text...</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit ipsam, sapiente officia aliquid hic ratione saepe sed eum illo nisi qui dicta reiciendis, delectus natus obcaecati excepturi beatae vel.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit ipsam, sapiente officia
+                    aliquid hic ratione saepe sed eum illo nisi qui dicta reiciendis, delectus natus obcaecati excepturi
+                    beatae vel.</p>
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card">
                 <h2>About Me</h2>
-                <div 
-                    class="fakeimg" 
-                    style="height: 100px;">
+                <div class="fakeimg" style="height: 100px;">
                     Image
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia, ipsa tempore accusantium assumenda laboriosam</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint mollitia, ipsa tempore accusantium
+                    assumenda laboriosam</p>
             </div>
 
             <div class="card">
@@ -90,7 +116,7 @@
                 <h3>Follow Me</h3>
                 <p>Some text...</p>
             </div>
-        </div>        
+        </div>
     </div>
     <!-- Content end -->
 
@@ -102,4 +128,5 @@
     <!-- Footer end -->
 
 </body>
+
 </html>

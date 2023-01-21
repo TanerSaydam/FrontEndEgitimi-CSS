@@ -84,6 +84,10 @@ body{
     margin-top: 20px;
 }
 
+.short-navbar{
+    display: none;
+}
+
 @media only screen and (max-width:1000px){
     .leftcolumn, .rightcolumn{
         width: 100%;
@@ -95,4 +99,15 @@ body{
     .navbar li, .right{
         float: none !important;
     }    
+
+    li{
+        padding-right: 20px; 
+    }
+    .short-navbar{              
+        display: block;
+    }
+
+    .navbar-content{
+        display: none;
+    }
 }
