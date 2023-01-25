@@ -1,132 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taner Saydam | My Blog Home Page</title>
     <script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
-    <style>        
-        a{
-            text-decoration: none;
-        }
-
-        a:visited{
-            color: azure;
-        }
-
-        .active{
-            background-color: rgb(25, 25, 142);
-            color: white;
-            padding: 5px;
-            border-radius: 6px;
-        }
-    </style>
-    
-
-<style>
-    /* .cerceve{
-        margin: 10px;
-        padding: 10px;
-        border: 1px solid;        
-        box-shadow: 10px 10px 5px #aaaaaa
-    }    */
-</style>
-
-<style>
-    footer{
-        border: 1px solid;
-        box-shadow: 5px 5px 5px #aaaaaa;
-        padding: 8px;
-        margin-top: 38%;
-        position: fixed;
-        bottom: 0;
-        margin-bottom: 5px;
-        background-color: cornflowerblue;
-    }
-    p{
-        height: 35px;    
-        overflow: hidden;    
-    }
-
-    nav{
-        position: sticky;
-        box-shadow: 5px 5px 5px #aaaaaa;
-        top: 5px;
-        padding: 8px;
-        background-color: cornflowerblue;
-        border: 1px solid;
-        margin-top: 5px;
-    }
-</style>
+    <link rel="stylesheet" href="./my-blog.css">
 </head>
-<body>    
-    <nav>
-        <a href="index.html" class="active">
-            <i style="font-size: smaller;" class="fa fa-home"></i>            
-            Ana Sayfa</a> |
-        <a href="hakkimda.html">
-            <i class="fa fa-stop"></i>
-            Hakkımızda</a> |
-        <a href="iletisim.html">
-            <i class="fa-solid fa-envelope"></i>
-            İletişim
-        </a>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="active">Ana Sayfa</a>
+        <a href="#">Hakkımızda</a>
+        <a href="#">İletişim</a>
     </nav>
 
-    <hr>
-    <section>
-        
-        <div class="cerceve">            
-            <figure>
-            <img src="https://assets.enuygun.com/media/lib/570x400/uploads/image/1764.jpeg" alt="" width="150">
-            <figcaption>Paris Gezim</figcaption>
-        </figure>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente asperiores possimus nostrum vero impedit voluptas tenetur sunt sit quas, laborum, molestiae sed, placeat debitis aliquam magni quis? Ab, officia!</p>
-            <br>
-            <button>Yorumlar</button>
-            <button>Detay</button>
-            <button>Puanla</button>
+    <div class="row">
+        <div class="col-3">
+            <h2>Benim Hakkımda</h2>
+            <h5>Profil Fotoğrafım</h5>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="fakeimg" style="height: 30px;"></div>
+            <div class="fakeimg" style="height: 30px;"></div>
+            <div class="fakeimg" style="height: 30px;"></div>
         </div>
-    </section>
-    <hr>
-    <section>
-        <div class="cerceve">            
-            <figure>
-            <img src="https://arkeofili.com/wp-content/uploads/2020/07/bab1.jpg" alt="" width="150">
-            <figcaption>Babil'in Asma Bahçeleri</figcaption>
-        </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptate asperiores, temporibus, repellendus similique officiis quas beatae nulla incidunt facilis in voluptas ipsa explicabo sunt veniam porro eveniet, minima ipsam.</p>
-            <br>
-            <button>Yorumlar</button>
-            <button>Detay</button>
-            <button>Puanla</button>            
-        </div>
-    </section>
 
-    <section>
-        <div class="cerceve">            
-            <figure>
-            <img src="https://arkeofili.com/wp-content/uploads/2020/07/bab1.jpg" alt="" width="150">
-            <figcaption>Babil'in Asma Bahçeleri</figcaption>
-        </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptate asperiores, temporibus, repellendus similique officiis quas beatae nulla incidunt facilis in voluptas ipsa explicabo sunt veniam porro eveniet, minima ipsam.</p>
+        <div class="col-9">
+            <h2>SOME TITLE</h2>
+            <h5>Lorem ipsum dolor</h5>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <p>Lorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur minus expedita voluptas iure. Quo deserunt quas excepturi accusantium, ipsum esse assumenda ad tenetur at in iure, corrupti, repellendus corporis!</p>
             <br>
-            <button>Yorumlar</button>
-            <button>Detay</button>
-            <button>Puanla</button>            
+            <h2>SOME TITLE</h2>
+            <h5>Lorem ipsum dolor</h5>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <p>Lorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur minus expedita voluptas iure. Quo deserunt quas excepturi accusantium, ipsum esse assumenda ad tenetur at in iure, corrupti, repellendus corporis!</p>
+            <br>
+            <h2>SOME TITLE</h2>
+            <h5>Lorem ipsum dolor</h5>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <p>Lorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam pariatur minus expedita voluptas iure. Quo deserunt quas excepturi accusantium, ipsum esse assumenda ad tenetur at in iure, corrupti, repellendus corporis!</p>
+            <br>
         </div>
-    </section>
-<hr>
+    </div>
 
-    <footer>
-        2023-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>
-            Facebook
-        </span>
-        <span>Instagram</span>
-        <span>LinkedIn</span>
-    </footer>
+    <div class="footer">
+        <h2>footer</h2>
+    </div>
 </body>
+
 </html>

@@ -5,8 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .row{
+            /* content: "";
+            clear: both;
+            display: table; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        [class*="col-"]{
+            /* float: left; */
+            padding: 15px;
+            border: 1px solid red;
+        }
+
+        .col-1 {flex: 8.33%;}
+        .col-2 {flex: 16.66%;}
+        .col-3 {flex: 25%;}
+        .col-4 {flex: 33.33%;}
+        .col-5 {flex: 41.66%;}
+        .col-6 {flex: 50%;}
+        .col-7 {flex: 58.33%;}
+        .col-8 {flex: 66.66%;}
+        .col-9 {flex: 75%;}
+        .col-10 {flex: 83.33%;}
+        .col-11 {flex: 91.66%;}
+        .col-12 {flex: 100%;}
+
+        @media screen and (orientation: landscape) {
+            body{
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width:600px) and (max-width:992px) {
+            body{
+                background-color: rgb(4, 77, 236);
+            }
+        }
+    </style>
 </head>
 <body>
     
+    <div class="row">
+        <div class="col-1">
+            Lorem ipsum dolor sit.
+        </div>
+        <div class="col-2">
+            Lorem ipsum dolor sit.
+        </div>
+        <div class="col-3">
+            Lorem ipsum dolor sit.
+        </div>
+        <div class="col-4">
+            Lorem ipsum dolor sit.
+        </div>
+        <div class="col-2">
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+
+    <ol>
+        <li>.col-1 => width: 8.33%</li>
+        <li>.col-2 => width: 16.66%</li>
+        <li>.col-3 => width: 25%</li>
+        <li>.col-4 => width: 33.33%</li>
+        <li>.col-5 => width: 41.66%</li>
+        <li>.col-6 => width: 50%</li>
+        <li>.col-7 => width: 58.33%</li>
+        <li>.col-8 => width: 66.66%</li>
+        <li>.col-9 => width: 75%</li>
+        <li>.col-10 => width: 83.33%</li>
+        <li>.col-11 => width: 91.66%</li>
+        <li>.col-12 => width: 100%</li>
+    </ol>
+
+    <h1>Cihaz Boyutlandırmaları</h1>
+    <ol>
+        <li>Telefon ve Küçük cihazlar
+            <p>max-width: 600px</p>
+        </li>
+        <li>Tablet dikey şekli ve büyük telefonlar
+            <p>min-width: 600px - max-width:768px</p>
+        </li>
+        <li>Tablet yatay şekli
+            <p>min-width:768px - max-width:992px</p>
+        </li>
+        <li>Laptop ve normal boyutlu bilgisayarlar
+            <p>min-width:992px - max-width:1200px</p>
+        </li>
+        <li>Büyük cihazlar
+            <p>min-width:1200px</p>
+        </li>
+    </ol>
+
+    <style>
+        p{
+            font-weight: 700;
+            color: brown;
+        }
+    </style>
+
+    <div style="margin-bottom: 2000px;"></div>
 </body>
 </html>
