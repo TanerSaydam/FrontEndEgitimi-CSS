@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- middleware -->
+    <style>
+        .pagination{
+            display: inline-block;
+        }
+
+        .pagination a{
+            text-decoration: none;
+            color: black;
+            float: left;
+            padding: 4px 8px;
+            /* border: 1px solid #ddd; */
+        }
+
+        .pagination a.active{
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover{
+            background-color: #ccc;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .btn{
+            border: 1px solid #ddd;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pagination</h1>
+    <div class="center">
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">&raquo;</a>
+    </div>
+    </div>
+
+
+    <hr>
+    <div class="pagination">
+        <a href="#" class="btn"><</a>
+        <a href="#" class="btn">></a>
+    </div>
+</body>
+</html>

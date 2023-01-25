@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --blue: #1e90ff;
+            --white: #ffffff;
+            --size: 15px;
+            --padding: 5px 20px;
+        }
+
+        body{
+            background-color: var(--blue);
+        }
+
+        h2{
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container{
+            --container-color: rgb(120, 120, 141);
+            color: var(--container-color);
+            background-color: var(--white);
+            padding: var(--size);
+        }
+
+        button{
+            --blue: red;
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: var(--padding);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ovveriding Variables</h1>
+    <div class="container"> 
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, repudiandae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, repudiandae!</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+</body>
+</html>

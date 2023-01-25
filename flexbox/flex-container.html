@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            height: 300px;
+            align-content: space-between;
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            background-color: DodgerBlue;
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;           
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Container</h1>
+
+    <div class="flex-container">
+        <!-- <div style="flex-grow: 1; order:3">1</div>
+        <div style="flex-grow: 1;  order:1">2</div>
+        <div style="flex-grow: 8;  order:2">3</div> -->
+        
+        <div style="align-self: start;">4</div>
+        <div style="align-self: end;">5</div>
+        <div style="flex-basis: 200px">6</div>
+        <div style="align-self: center;">7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>

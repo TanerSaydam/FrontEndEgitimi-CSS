@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+
+        .container{
+            --fontsize: 25px;
+        }
+
+        body{
+            background-color: var(--blue);
+        }
+
+        h2{
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container{
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+            font-size: var(--fontsize);
+        }
+
+        @media screen and (min-width: 450px){
+            .container{
+                --fontsize:50px
+            }
+
+            :root{
+                --blue:lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Variables Media Queries</h1>
+    <h1>Lorem, ipsum dolor.</h1>
+    <div class="container">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dolor quae, suscipit dignissimos, neque dolorem eligendi saepe ducimus, architecto consectetur quam dolorum maiores itaque eaque iusto nihil sit tempore recusandae?</p>
+    </div>
+</body>
+</html>

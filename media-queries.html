@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        @media not screen and (min-width:480px){
+            body{
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Queries</h1>
+    <pre>
+        <p>Syntax Yapısı</p>
+        <code>@media not|only mediatype and (expression){
+           CSS Code
+        }
+        </code>
+    </pre>
+
+    <ul>
+        <li>all
+            <p>Tüm cihazlarda geçerlidir</p>
+        </li>
+        <li>print
+            <p>yazıcılarda geçerli</p>
+        </li>
+        <li>screen
+            <p>telefonlar,tabletler,bilgisayarlar</p>
+        </li>
+        <li>speech
+            <p>sreenreaders aletlerinde geçerlidir</p>
+        </li>
+    </ul>
+
+    <p>
+        <!-- <link rel="stylesheet" media="mediatype and|not|only (expression)" href="print.css"> -->
+    </p>
+
+    <h1>Resize the browser window to see the effect</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, molestiae?</p>
+</body>
+</html>
